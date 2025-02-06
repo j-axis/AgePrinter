@@ -1,0 +1,38 @@
+Subject: [PATCH] 1st Patch
+---
+Index: AgePrinter.java
+===================================================================
+diff --git a/AgePrinter.java b/AgePrinter.java
+deleted file mode 100644
+--- a/AgePrinter.java	(revision 6d9b0a112ca320d97a2879530ce55d5745f3e4f9)
++++ /dev/null	(revision 6d9b0a112ca320d97a2879530ce55d5745f3e4f9)
+@@ -1,4 +0,0 @@
+-package PACKAGE_NAME;
+-
+-public class AgePrinter {
+-}
+Index: src/AgePrinter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/AgePrinter.java b/src/AgePrinter.java
+new file mode 100644
+--- /dev/null	(date 1738806865436)
++++ b/src/AgePrinter.java	(date 1738806865436)
+@@ -0,0 +1,14 @@
++import java.util.Scanner;
++
++public class AgePrinter {
++    public static void main (String[] args) {
++        int avgLifespan = 70;
++        int userAge;
++
++        System.out.print("Enter your age: ");
++        Scanner scnr = new Scanner(System.in);
++        userAge = scnr.nextInt();
++        System.out.println(userAge + " is a great age.");
++        System.out.println("Average lifespan is " + avgLifespan);
++    }
++}
+\ No newline at end of file
